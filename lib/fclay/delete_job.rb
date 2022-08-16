@@ -5,7 +5,7 @@ module Fclay
 
     def perform(file)
       puts 'Deleting progress!!!!'
-      FileUtils.rm(file, { force: true })
+      FileUtils.rm(file, force: true)
     end
 
   end

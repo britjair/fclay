@@ -154,7 +154,7 @@ module Fclay
     end
 
     def delete_tmp_file
-       FileUtils.rm(@file.try(:path) || @file[:path],{:force => true}) if @file
+       FileUtils.rm(@file.try(:path) || @file[:path], force: true) if @file
        @file = nil
     end
 
